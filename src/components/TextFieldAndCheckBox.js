@@ -21,13 +21,13 @@ const TextFieldAndCheckBox = (props) => {
         inputProps={{ "aria-label": "primary checkbox" }}
       />
       <TextField
+        type="number"
         size="small"
         error={percent >= 0 && percent <= 100 ? false : true}
         helperText={
           percent >= 0 && percent <= 100 ? "" : "Percent >=0 && <=100"
         }
         disabled={disableTextField1}
-        type="number"
         fullWidth
         label="%"
         variant="outlined"
@@ -51,11 +51,11 @@ const TextFieldAndCheckBox = (props) => {
         inputProps={{ "aria-label": "primary checkbox" }}
       />
       <TextField
+        type="number"
         size="small"
         error={price >= 0 ? false : true}
         helperText={price >= 0 ? "" : "Price >=0"}
         disabled={disableTextField2}
-        type="number"
         fullWidth
         label="£"
         variant="outlined"
